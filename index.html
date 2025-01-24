@@ -3,88 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Rupama's Portfolio</title>
     <!-- css link add here -->
-    <link rel="stylesheet" href="index.css">
-    <!-- google font add here -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- font awsome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="skincolor.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#logo" class="logo">My Portfolio.</a>
-        <ul>
-            <li class="active"><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-                <li><a href="#education">EDUCATION</a></li>
-                <li><a href="#project">PROJECT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                </ul>
-    </nav>
-    <header>
-        <section class="banner">
-       <div class="banner-info">
-        <h5>HI, my name is</h5>
-        <h1>Rupama Akhter</h1>
-        <h2>I build things for the web.</h2>
-        <p>Hello! I am Rupama Akhter, a passionate web developer and designer. I have 2+ years of experience building responsive and user-friendly web applications. I enjoy working with modern web technologies and creating projects that solve real-world problems.</p>
-        <div class="btn-primary">
-            <a href="#" class="btn-cv">Download CV</a>
-            <div class="btn-secondary">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <!-- main container start -->
+    <div class="main-container">
+        <!-- a-side start -->
+         <div class="a-side">
+        <div class="logo">
+            <a href="#"><span>Rupama</span></a>
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i>About</a></li>
+            <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+        </ul>
+         </div>
+         <!-- a-side end -->
+          <!-- main-content start -->
+           <div class="main-content">
+            <!-- Home section start -->
+             <section class="home section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Rupama Akhter</span></h3>
+                            <h3 class="my-profession">I' m a <span class="typing">Web Designer</span></h3>
+                            <p>I'm a web designer. I have 2+ years of experience building responsive and user-friendly web applications. I enjoy working with modern web technologies and creating projects that solve real-world problems.
+                            </p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="/rupama/rupama-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- Home section end -->
+             <!-- About section start -->
+            <section class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text">
+                                    <h3>I'm Rupama Akhter and <span>Web Developer</span></h3>
+                                    <p>Hello! My name is Rupama Akhter and I enjoy creating things that live on the interne.
+                                        My interest in web development started back in 2021 when I decided to try editing
+                                        custom Tumblr themes - turns out hacking together a custom reblog button taught
+                                        me a log about HTML & CSS!</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item">
+                                            <p>Birthday:<span> 15 July 2001 </span></p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>Website:<span> www.domain.com </span></p></div>
+                                            <div class="info-item">
+                                                <p>Degree:<span>BBA </span></p></div>
+                                           <div class="info-item">
+                                             <p>Phone:<span>01703442093 </span></p></div>
+                                          <div class="info-item">
+                                              <p>City:<span>Pirojpur </span></p></div>
+                                            <div class="info-item">
+                                                <p>Age:<span> 23 </span></p></div>
+                                            <div class="info-item">
+                                                <p>Email:<span> rupmukta019@gmail.com </span></p></div>
+                                           <div class="info-item">
+                                             <p>Freelance:<span>Available </span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="buttons">
+                                                <a href="#" class="btn">Download CV</a>
+                                                <a href="#contact" class="btn hire-me">Hire Me</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    
+                                </div>
+                                <!-- education start -->
+                                <div class="education">
+                                        <div class="row">
+                                            <div class="section-title padd-15">
+                                                <h2>My Education</h2>
+                                            </div>
+                                        </div>
+                                    <ul class="timeline">
+                                        <li class="timeline-item">
+                                            <h3>BBA. Honours in Management</h3>
+                                            <p>School Year: 2019-Present</p>
+                                            <p>at Govt. Suhrawardi College, Pirojpur</p>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <h3>HSC in Commerce</h3>
+                                            <p>School Year: 2019</p>
+                                            <p>from Pirojpur Government Girls' College</p>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <h3>SSC in Commerce</h3>
+                                            <p>School Year: 2017</p>
+                                            <p>from Parerhat United  Girls' High School</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+            </section>
+                        </div>
+                        
+                    </div>
+                    
+            
+               <!-- About section end -->
+           
+           <!-- service section start -->
+            
+           <h1 class="text-center text-3xl font-bold mt-10 mb-5">My Services</h1>
+           <div class="siri-design">
+               <div class="service-box">
+                   <h3>HTML</h3>
+                   <p>Creating structured and semantic web pages.</p>
+               </div>
+               <div class="service-box">
+                   <h3>CSS</h3>
+                   <p>Designing attractive and responsive layouts.</p>
+               </div>
+               <div class="service-box">
+                   <h3>JavaScript</h3>
+                   <p>Adding interactivity to your web applications.</p>
+               </div>
+               <div class="service-box">
+                   <h3>Tailwind</h3>
+                   <p>Rapidly building modern and customizable designs.</p>
+               </div>
+               <div class="service-box">
+                   <h3>Bootstrap</h3>
+                   <p>Creating responsive and mobile-first designs.</p>
+               </div>
+           </div>
+       </div>
+       <!-- claint say section -->
+       <div class="client-say-section">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="client-testimonials">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-box">
+                <p class="testimonial-text">"This service is amazing! It helped my business grow beyond expectations. Highly recommend!"</p>
+                <p class="client-name">John Doe</p>
+                <p class="client-role">CEO, Company ABC</p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-box">
+                <p class="testimonial-text">"Professional and efficient service. I am truly satisfied with the results!"</p>
+                <p class="client-name">Jane Smith</p>
+                <p class="client-role">Founder, Startup XYZ</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="testimonial-box">
+                <p class="testimonial-text">"Great experience working with this team! Their attention to detail is exceptional."</p>
+                <p class="client-name">Michael Lee</p>
+                <p class="client-role">Marketing Director, Digital Hub</p>
             </div>
         </div>
-       </div>
-
-       <div class="banner-img">
-        <div class="img-box">
-            <div class="img-item">
-                <img src="/rupama/img2-removebg-preview.png" alt="">
-            </div>
-        </div>
-       </div>
-        </section>
-    
-    </header>
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hello! My name is Rupama Akhter and I enjoy creating things that live on the interne. <br> My interest in web development started back in 2021 when I decided to try editing <br>custom Tumblr themes - turns out hacking together a custom reblog button taught <br> me a log about HTML & CSS!</p>
-          
-        </section>
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <p>BBA Hon's Department of Management at National University of Bangladesh</p>
-        </section>
-        <section id="project" class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Portfolio Website</h3>
-                    <p>A personal portfolio to showcase my skills and projects.</p>
-                </div>
-                <div class="project">
-                    <h3>E-commerce Platform</h3>
-                    <p>Developed a scalable e-commerce solution with secure payment integration.</p>
-                </div>
-                <div class="project">
-                    <h3>Blog Website</h3>
-                    <p>A responsive blog platform with user authentication and commenting system.</p>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, email me at <a href="mailto:rupmukta019@.com" style="color: #64ffda;">rupmukta019@gmail.com</a></p>
-        </section>
     </div>
-    <footer>
-        <p>&copy; 2025 Rupama Akhter. All rights reserved.</p>
-    </footer>
-    <div class="email">rupmukta019@gmail.com</div>
+        
+    <!-- main container end -->
+ <footer>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        
+        <div class="contact-info">
+          <p><strong>Email:</strong> rupmukta019@email.com</p>
+          <p><strong>Phone Number:</strong> 01703442093</p>
+          <p><strong>Address:</strong> 123 Street Name,Pirojpur,Bangladesh</p>
+        </div>
+        
+        <p>You can also reach out using the form below:</p>
+        <form action="/submit" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      
+ </footer>
+    <!-- js link add here -->
+     <script src="script.js"></script>
 </body>
 </html>
