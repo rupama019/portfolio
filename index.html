@@ -3,389 +3,482 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rupama's Portfolio</title>
-    <!-- css link add here -->
-     <link rel="stylesheet" href="index.css">
-     <link rel="stylesheet" href="skincolor.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Rupama Akhtar - Portfolio</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@400..700&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <!-- font awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        .fadeIn {
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .clicker-script-regular {
+  font-family: "Clicker Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+        .hero-name {
+    font-family: 'Clicker Script', cursive;
+}
+
+    </style>
 </head>
-<body>
-    <!-- main container start -->
-    <div class="main-container">
-        <!-- a-side start -->
-         <div class="aside">
-        <div class="logo">
-            <a href="#"><span>Rupama</span></a>
+<body class=" text-white">
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-800 transform -translate-x-full md:translate-x-0 z-50 shadow-xl ">
+        <div class="flex justify-between items-center px-6 py-4">
+            <a href="#hero" class="hero-name text-4xl pt-10 font-bold text-red-500">Rupama Akhter</a>
+            <button id="close-btn" class="text-white md:hidden focus:outline-none">✖</button>
         </div>
-        <div class="nav-toggler">
-            <span></span>
-        </div>
-        <ul class="nav">
-            <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-            <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#client"><i class="fa-solid fa-users"></i>Clients say</a></li>
-            <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+        <ul class="space-y-6 px-6 pt-20 text-lg justify-center items-center">
+        <li><a href="#hero"><i class="nav-link fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="nav-link fa fa-user"></i> About</a></li>
+        <li><a href="#services"><i class="nav-link fa fa-list"></i> Services</a></li>
+        <li><a href="#projects"><i class="nav-link fa fa-briefcase"></i> Project</a></li>
+        <li><a href="#education"><i class="nav-link fa-solid fa-user-graduate"></i> Education</a></li>
+        <li><a href="#clients"><i class="nav-link fa-solid fa-users"></i> Client Say</a></li>
+        <li><a href="#contact"><i class="nav-link fa fa-comments"></i> Contact</a></li>
         </ul>
-         </div>
-         <!-- a-side end -->
-          <!-- main-content start -->
-           <div class="main-content">
-            <!-- Home section start -->
-             <section class="home active section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Rupama Akhter</span></h3>
-                            <h3 class="my-profession">I' m a <span class="typing">Web Designer</span></h3>
-                            <p>I'm a web designer. I have 2+ years of experience building responsive and user-friendly web applications. I enjoy working with modern web technologies and creating projects that solve real-world problems.
-                            </p>
-                            <a href="#" class="btn">Download CV</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="/rupama/rupama-removebg-preview.png" alt="">
-                        </div>
-                    </div>
-                </div>
-             </section>
-            <!-- Home section end -->
-             <!-- About section start -->
-            <section id="about" class="about section">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text">
-                                    <h3>I'm Rupama Akhter and <span>Web Developer</span></h3>
-                                    <p>Hello! My name is Rupama Akhter and I enjoy creating things that live on the interne.
-                                        My interest in web development started back in 2021 when I decided to try editing
-                                        custom Tumblr themes - turns out hacking together a custom reblog button taught
-                                        me a log about HTML & CSS!</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item">
-                                            <p>Birthday:<span> 15 July 2001 </span></p>
-                                            </div>
-                                            <div class="info-item">
-                                                <p>Website:<span> www.domain.com </span></p></div>
-                                            <div class="info-item">
-                                                <p>Degree:<span>BBA </span></p></div>
-                                           <div class="info-item">
-                                             <p>Phone:<span>01703442093 </span></p></div>
-                                          <div class="info-item">
-                                              <p>City:<span>Pirojpur </span></p></div>
-                                            <div class="info-item">
-                                                <p>Age:<span> 23 </span></p></div>
-                                            <div class="info-item">
-                                                <p>Email:<span> rupmukta019@gmail.com </span></p></div>
-                                           <div class="info-item">
-                                             <p>Freelance:<span>Available </span></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="buttons padd-15">
-                                                
-                                                <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    
-                                </div>
-                        </div>
-                        </div>
-                        </div>
-                        </section>
-                              
-
-                 <!-- About section end -->
-
-                  <!-- education section start -->
-
-                   <!-- <section class="education ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="section-title padd-15">
-                                <h2>Education</h2>
-                            </div>
-                      <div class="education-content">
-                        <div>
-                            
-                            <div class="timeline-item">
-                              <div class="cercle-dot">
-                                  <h3 class="timeline-date">
-                                      <i class="fa fa-calendar">School Year: 2017</i>
-                                  </h3>
-                                  <h4 class="timeline-title">SSC in Commerce</h4>
-                                  <p class="timeline-text">from Parerhat United  Girls' High School</p>
-                              </div>
-                          </div>
-                            
-                            <div class="timeline-item">
-                              <div class="cercle-dot">
-                                  <h3 class="timeline-date">
-                                      <i class="fa fa-calendar">School Year: 2019</i>
-                                  </h3>
-                                  <h4 class="timeline-title">HSC in Commerce</h4>
-                                  <p class="timeline-text">from Pirojpur Government Girls' College</p>
-                              </div>
-                          </div>
-                            
-                            <div class="timeline-item">
-                              <div class="cercle-dot">
-                                  <h3 class="timeline-date">
-                                      <i class="fa fa-calendar">School Year: 2019-Present</i>
-                                  </h3>
-                                  <h4 class="timeline-title">BBA. Honours in Management</h4>
-                                  <p class="timeline-text">at Govt. Suhrawardi College, Pirojpur</p>
-                              </div>
-                          </div>
-                    </div>
-                      </div>
-                    </div>
-                    </div>
-                    
-                   </section> -->
-        
-                  <!-- education section end -->
-               <!-- service section start -->
-               <section id="services" class="service section ">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Services</h2>
-                        </div>
-                </div>
-                <div class="row">
-                    <!-- item-1 -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-mobile-alt"></i>
-                            </div>
-                            <h4>Responsive</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?</p>
-                        </div>
-                    </div>
-                    <!-- item-2 -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <h4>HTML</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?</p>
-                        </div>
-                    </div>
-                    <!-- item-3 -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-palette"></i>
-                            </div>
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?</p>
-                        </div>
-                    </div>
-                    <!-- item-4 -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-code"></i>
-                            </div>
-                            <h4>CSS</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?</p>
-                        </div>
-                    </div>
-                    <!-- item-5 -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <h4>JavaScript</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?</p>
-                        </div>
-                    </div>
-                    <!-- item-6 -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-bullhorn"></i>
-                            </div>
-                            <h4>Tailwind</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?</p>
-                        </div>
-                    </div>
-                    
-                </div>
-             </section>
- <!-- service section end -->
-
- <!-- portfolio section start -->
- <section id="portfolio" class="portfolio section">
-    <div class="container">
-        <div class="row">
-            <div class="section-title padd-15">
-                <h2>Portfolio</h2>
-            </div>
-    </div>
-    <div class="row">
-        <div class="portfolio-heading">
-            <h2>My Last Project :</h2>
-        </div>
-    </div>
-    <div class="row">
-        <!-- project-1 -->
-         <div class="portfolio-item padd-15">
-           <div class="portfolio-item-inner shadow-dark">
-             <div class="portfolio-img">
-                <img src="/rupama/p1.jpg" alt="">
-             </div>
-           </div>
-         </div>
-          <!-- project-2 -->
-          <div class="portfolio-item padd-15">
-            <div class="portfolio-item-inner shadow-dark">
-              <div class="portfolio-img">
-                 <img src="/rupama/p2.jpg" alt="">
-              </div>
-            </div>
-          </div>
-           <!-- project-3 -->
-         <div class="portfolio-item padd-15">
-            <div class="portfolio-item-inner shadow-dark">
-              <div class="portfolio-img">
-                 <img src="/rupama/p4.jpg" alt="">
-              </div>
-            </div>
-          </div>
-    </div>
-   <!-- portfolio section end -->
-
-       <!-- claint say section start-->
-       <section id="client" class="service ">
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
-                    <h2>What Our Clients Say</h2>
-                </div>
-        </div>
-       <div class="client-testimonials">
-        <div class="row">
-            <!-- item-1 -->
-            <div class="testimonial-box padd-15">
-                <p class="testimonial-text">"This service is amazing! It helped my business grow beyond expectations. Highly recommend!"</p>
-                <p class="client-name">Nusrat Jahan</p>
-                <p class="client-role">CEO, Company ABC</p>
-            </div>
-             <!-- item 2 -->
-
-            <div class="testimonial-box padd-15">
-                <p class="testimonial-text">"Professional and efficient service. I am truly satisfied with the results!"</p>
-                <p class="client-name">Mukta Akhter</p>
-                <p class="client-role">Founder, Startup XYZ</p>
-            </div>
-                        <!--item 3 -->
-             
-            <div class="testimonial-box padd-15">
-                <p class="testimonial-text">"Great experience working with this team! Their attention to detail is exceptional."</p>
-                <p class="client-name">Pakhi Akhter</p>
-                <p class="client-role">Marketing Director, Digital Hub</p>
-            </div>
-        </div>
-       </div>
-    </div>
-
-        </div>
-     </section>
-       <!-- claint say section end-->
-
-        <!-- contact section start -->
-         <section id="contact" class="contact section">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Contact Me</h2>
-                    </div>
-            </div>
-            <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-            <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-            <div class="row">
-                <!-- item-1 -->
-                <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa fa-phone"></i></div>
-                    <h4>Call Us On</h4>
-                    <p>01703442093</p>
-                </div>
-                <!-- item-2 -->
-                <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                    <h4>Country</h4>
-                    <p>Bangladesh</p>
-                </div>
-                <!-- item-3 -->
-                <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa fa-envelope"></i></div>
-                    <h4>Email</h4>
-                    <p>rupmukta019@gmail.com</p>
-                </div>
-            </div>
-            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-            <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-        
-            <div class="row">
-                <div class="contact-from padd-15">
-                    <div class="row">
-                        <div class="from-item col-6 padd-15">
-                            <div class="from-group">
-                                <input type="text" class="from-control" placeholder="Name">
-                            </div>
-                        </div>
-                            <div class="from-item col-6 padd-15">
-                                <div class="from-group">
-                                    <input type="email" class="from-control" placeholder="Email">
-                                </div>
-                            </div>
-                </div>
-                <div class="row">
-                    <div class="from-item col-12 padd-15">
-                        <div class="from-group">
-                            <input type="text" class="from-control" placeholder="subject">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="from-item col-12 padd-15">
-                        <div class="from-group">
-                            <textarea name="" class="from-control" id="" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="from-item col-12 padd-15">
-                      <button type="submit" class="btn">Send Message</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-         </section>
        
-          
-          
+    </div>
+    
+    <button id="menu-btn" class="text-white md:hidden absolute top-6 left-6 z-40">☰</button>
+    
+    <div class="main-content">
+       
+      <!-- Hero Section -->
+     <section id="hero" class="h-screen flex flex-col justify-center items-center text-center bg-gray-900 text-white">
+    <div class="max-w-2xl mx-auto p-6">
+        <img src="/rupama/img 1.jpg" alt="Rupama Akhtar" class="w-48 h-48  mx-auto border-4 border-gray-700 shadow-lg">
+        <h1 class="hero-name text-4xl md:text-5xl font-bold mt-4">Hello, I'm <span class="text-red-500">Rupama Akhtar</span></h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mt-2">
+            <span id="typed"></span>
+        </h2>
+        <p class="text-lg text-gray-300 mt-4">
+            I'm a web designer. I have 2+ years of experience building responsive and user-friendly web applications.
+            I enjoy working with modern web technologies and creating projects that solve real-world problems.
+        </p>
+        <p class="text-md text-gray-400 mt-2">
+            Passionate about crafting elegant web solutions, ensuring intuitive UI/UX, and optimizing website performance.
+        </p>
+        <div class="mt-6 flex justify-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="/rupama.pdf" class="mt-6 inline-block bg-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-red-600 transition">Download CV</a>
+    </div>
+</section>
+
+        
+        <!-- About Section -->
+        
+        <section id="about" class="py-16 bg-gray-700">
+            <div class="max-w-4xl mx-auto px-6">
+                <!-- About Me Title -->
+                <h2 class="text-3xl font-bold text-white text-center mb-12">About Me</h2>
+        
+                <!-- Personal Info Description -->
+                <div class="text-center mb-6">
+                    <p class="text-lg text-white mb-4">
+                        I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I decided to try editing custom Tumblr themes – turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                    </p>
+                    <p class="text-lg text-white mb-6">
+                        I'm a passionate web developer with a keen interest in building responsive and user-friendly websites.
+                    </p>
+                </div>
+        
+                <!-- Personal Details Table -->
+                <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden">
+                    <table class="w-full text-left border-collapse text-white">
+                        <tbody>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-4 px-6 font-semibold">Birthday:</td>
+                                <td class="py-4 px-6">15 July 2001</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-4 px-6 font-semibold">Website:</td>
+                                <td class="py-4 px-6"><a href="http://www.domain.com" target="_blank" class="text-blue-400">www.domain.com</a></td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-4 px-6 font-semibold">Degree:</td>
+                                <td class="py-4 px-6">BBA</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-4 px-6 font-semibold">Phone:</td>
+                                <td class="py-4 px-6">01703442093</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-4 px-6 font-semibold">City:</td>
+                                <td class="py-4 px-6">Pirojpur</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-4 px-6 font-semibold">Age:</td>
+                                <td class="py-4 px-6">23</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-4 px-6 font-semibold">Email:</td>
+                                <td class="py-4 px-6"><a href="mailto:rupmukta019@gmail.com" class="text-blue-400">rupmukta019@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 font-semibold">Freelance:</td>
+                                <td class="py-4 px-6">Available</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Hire Me Button -->
+                <div class="text-center mt-8">
+                    <a href="mailto:rupmukta019@gmail.com" 
+                    class="inline-block bg-red-500 text-white px-6 py-3 
+                    rounded-full font-semibold shadow-lg hover:bg-red-600 transition">Hire Me</a>
+                </div>
+            </div>
+        </section>
       
- 
-    <!-- js link add here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="script.js"></script>
+        <!-- service section -->
+        
+
+        <section id="services" class="py-16 bg-gray-900 text-white">
+            <div class="max-w-6xl mx-auto px-20 ">
+                <h2 class="text-3xl font-bold text-center mb-12 ">Services</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                    <!-- Service 1: Responsive -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover:bg-gray-600 transition-transform transform hover:scale-105">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex justify-center items-center mx-auto mb-4 icon-hover">
+                            <i class="fas fa-desktop text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Responsive</h3>
+                        <p class="text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?
+                        </p>
+                    </div>
+                    
+                    <!-- Service 2: HTML -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover:bg-gray-600 transition-transform transform hover:scale-105">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex justify-center items-center mx-auto mb-4 icon-hover">
+                            <i class="fab fa-html5 text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">HTML</h3>
+                        <p class="text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?
+                        </p>
+                    </div>
+        
+                    <!-- Service 3: Web Design -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover:bg-gray-600 transition-transform transform hover:scale-105">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex justify-center items-center mx-auto mb-4 icon-hover">
+                            <i class="fas fa-paint-brush text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Web Design</h3>
+                        <p class="text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?
+                        </p>
+                    </div>
+        
+                    <!-- Service 4: CSS -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover:bg-gray-600 transition-transform transform hover:scale-105">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex justify-center items-center mx-auto mb-4 icon-hover">
+                            <i class="fab fa-css3-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">CSS</h3>
+                        <p class="text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?
+                        </p>
+                    </div>
+        
+                    <!-- Service 5: JavaScript -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover:bg-gray-600 transition-transform transform hover:scale-105">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex justify-center items-center mx-auto mb-4 icon-hover">
+                            <i class="fab fa-js text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">JavaScript</h3>
+                        <p class="text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?
+                        </p>
+                    </div>
+        
+                    <!-- Service 6: Tailwind -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover:bg-gray-600 transition-transform transform hover:scale-105">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex justify-center items-center mx-auto mb-4 icon-hover">
+                            <i class="fab fa-css3-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Tailwind</h3>
+                        <p class="text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rerum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+            .icon-hover {
+                transition: transform 0.3s ease-in-out;
+            }
+        
+            .icon-hover:hover {
+                transform: scale(1.3); 
+            }
+            /* .transition-transform {
+                transition: transform 0.3s ease-in-out;
+            }
+        
+            .transform:hover {
+                transform: scale(1.1); 
+            } */
+        </style>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-gray-700 text-white">
+            <div class="max-w-6xl mx-auto px-20">
+                <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg project-card">
+                        <h3 class="text-2xl font-semibold mb-4"> Project 1</h3>
+                        <p class="text-lg mb-4">
+                            This project focuses on building a full-stack application with Node.js and MongoDB. The goal is to provide an intuitive interface for users to interact with.
+                        </p>
+                        <a href="#" class="text-red-500 hover:text-red-300 transition-all">View Project</a>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg project-card">
+                        <h3 class="text-2xl font-semibold mb-4">Project 2</h3>
+                        <p class="text-lg mb-4">
+                            This project focuses on building a full-stack application with Node.js and MongoDB. The goal is to provide an intuitive interface for users to interact with.
+                        </p>
+                        <a href="#" class="text-red-500 hover:text-red-300 transition-all">View Project</a>
+                    </div>
+        
+                    <!-- Project 3 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg project-card">
+                        <h3 class="text-2xl font-semibold mb-4">Project 3</h3>
+                        <p class="text-lg mb-4">
+                            A project focused on developing an e-commerce platform with ReactJS. It includes features like product searching, shopping cart, and user authentication.
+                        </p>
+                        <a href="#" class="text-red-500 hover:text-red-300 transition-all">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+            .project-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Zoom effect */
+}
+
+        </style>
+        
+        <!-- Education Section -->
+        <section id="education" class="py-16 bg-gray-900 text-white">
+            <div class="  max-w-5xl mx-auto px-20">
+                <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
+        
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-gray-700 table-auto text-left rounded-lg">
+                        <thead>
+                            <tr>
+                                <th class="py-4 px-6 text-xl font-semibold text-red-500">Degree</th>
+                                <th class="py-4 px-6 text-xl font-semibold text-red-500">Field of Study</th>
+                                <th class="py-4 px-6 text-xl font-semibold text-red-500">Institution</th>
+                                <th class="py-4 px-6 text-xl font-semibold text-red-500">Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- SSC Row -->
+                            <tr class="border-t border-gray-600">
+                                <td class="py-4 px-6 text-lg">SSC</td>
+                                <td class="py-4 px-6 text-lg">Business Studies Group</td>
+                                <td class="py-4 px-6 text-lg">Parerhat United Girl's High School</td>
+                                <td class="py-4 px-6 text-lg">2017</td>
+                            </tr>
+        
+                            <!-- HSC Row -->
+                            <tr class="border-t border-gray-600">
+                                <td class="py-4 px-6 text-lg">HSC</td>
+                                <td class="py-4 px-6 text-lg">Business Studies Group</td>
+                                <td class="py-4 px-6 text-lg">Pirojpur Govt. Women College</td>
+                                <td class="py-4 px-6 text-lg">2019</td>
+                            </tr>
+        
+                            <!-- Honours Row -->
+                            <tr class="border-t border-gray-600">
+                                <td class="py-4 px-6 text-lg">Honours</td>
+                                <td class="py-4 px-6 text-lg">BBA of Management</td>
+                                <td class="py-4 px-6 text-lg">National University</td>
+                                <td class="py-4 px-6 text-lg">Present</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+            /* Custom responsiveness for small screens */
+            @media (max-width: 768px) {
+                table {
+                    width: 100%;
+                    display: block;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                }
+                
+                th, td {
+                    padding: 12px;
+                    text-align: left;
+                }
+            }
+        </style>
+        
+        
+        <!-- Client Say Section -->
+       
+        <section id="clients" class="py-16 bg-gray-700 text-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+                
+                <div class="space-y-8">
+                    <!-- Client 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center client-card ">
+                        <p class="text-lg mb-4">
+                            "This service is amazing! It helped my business grow beyond expectations. Highly recommend!"
+                        </p>
+                        <h3 class="text-xl font-semibold text-red-500">Nusrat Jahan</h3>
+                        <p class="text-md text-gray-400">CEO, Company ABC</p>
+                    </div>
+                    
+                    <!-- Client 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center client-card ">
+                        <p class="text-lg mb-4">
+                            "Professional and efficient service. I am truly satisfied with the results!"
+                        </p>
+                        <h3 class="text-xl font-semibold text-red-500">Mukta Akhter</h3>
+                        <p class="text-md text-gray-400">Founder, Startup XYZ</p>
+                    </div>
+        
+                    <!-- Client 3 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center client-card ">
+                        <p class="text-lg mb-4">
+                            "Great experience working with this team! Their attention to detail is exceptional."
+                        </p>
+                        <h3 class="text-xl font-semibold text-red-500">Pakhi Akhter</h3>
+                        <p class="text-md text-gray-400">Marketing Director, Digital Hub</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<style>
+    .client-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.client-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+</style>
+        
+        
+        
+        <!-- Contact Section with Form -->
+        
+        <section id="contact" class="py-16 bg-gray-900 text-white">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+                <h3 class="text-2xl text-center mb-6 text-red-500 font-semibold">Have You Any Questions?</h3>
+                <p class="text-lg mb-8 text-center">I'm At Your Services</p>
+        
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-semibold">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Us On
+                    </h3>
+                    <p class="text-lg">01703442093</p>
+                </div>
+        
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-semibold">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Country
+                    </h3>
+                    <p class="text-lg">Bangladesh</p>
+                </div>
+        
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-semibold">
+                        <i class="fas fa-envelope mr-2"></i> Email
+                    </h3>
+                    <p class="text-lg">rupmukta019@gmail.com</p>
+                </div>
+        
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold mb-6 text-red-500">SEND ME AN EMAIL</h3>
+                    <p class="text-lg mb-6">I'm very responsive to messages</p>
+        
+                    <!-- Contact Form -->
+                    <form action="#" method="POST" class="space-y-4">
+                        <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0">
+                            <input type="text" name="name" placeholder="Name" class="p-4 bg-gray-700 text-white rounded-lg w-full md:w-1/2" required>
+                            <input type="email" name="email" placeholder="Email" class="p-4 bg-gray-700 text-white rounded-lg w-full md:w-1/2" required>
+                        </div>
+        
+                        <input type="text" name="subject" placeholder="Subject" class="p-4 bg-gray-700 text-white rounded-lg w-full" required>
+        
+                        <textarea name="message" placeholder="Message" rows="5" class="p-4 bg-gray-700 text-white rounded-lg w-full" required></textarea>
+        
+                        <button type="submit" class="mt-4 bg-red-500 text-white py-3 px-6 rounded-full hover:bg-red-600 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+    </div>
+    
+    <script>
+        // Sidebar toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const sidebar = document.getElementById('sidebar');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        menuBtn.addEventListener('click', () => sidebar.classList.remove('-translate-x-full'));
+        closeBtn.addEventListener('click', () => sidebar.classList.add('-translate-x-full'));
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => sidebar.classList.add('-translate-x-full'));
+        });
+        
+        // Typed.js for hero section
+        new Typed('#typed', {
+            strings: ["I’m Rupama Akhtar", "A Web Designer", "A Developer", "Let's Create Something Amazing"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
 </body>
 </html>
